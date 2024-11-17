@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="bg-bodycolor">
+    <div class="grid h-screen grid-cols-2 justify-items-center ">
+      <div
+        class="bg-taskcolor border-2   flex flex-col w-[500px] rounded-[30px] p-2 h-[300px]  self-center  "
+      >
+        <label class="mx-5"> ADD TASK</label>
+        <input
+          class="my-3 h-[40px] mx-5 rounded-[5px] addtask"
+          type="text"
+          placeholder="   Add task"
+        />
+        <label class="mx-5 my-3" for=""> ADD DESCRIPTION</label>
+        <input
+          class="mx-5 h-[70px] rounded-[5px] adddesc"
+          type="text"
+          placeholder="   Add description"
+        />
+        <button
+          class="bg-blue-500 w-[100px] mx-5 mt-3 h-[40px] p-2 rounded-[40px] my-3 btn"
+        >
+          Add task
+        </button>
+      </div>
+
+      <div
+        class="bg-bodycolor w-auto overscroll-y-auto TaskContainer   justify-items-center"
+      >
+         <h1>Task Container</h1>
+      </div>
+
+      <script src="./app.js"></script>
+    </div>
+  </body>
+</html>
